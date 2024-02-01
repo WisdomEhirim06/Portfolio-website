@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.png">
+        <title>Wisdom Ehirim</title>
+        <script src="https://kit.fontawesome.com/855c35aed5.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <!-- General home section -->
+        <section id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/portlogo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Engineer</p>
+                    <h1>I'm <span style="color: purple;">Wisdom</span> Ehirim</h1>
+                    <h1 style="font-size: 30px;">And I solve world problems with code.</h1>     
+                </div>
+                <!-- <img class="header-img" alt="Wisdom" src="/images/wisdomimg.png"> -->
+                
+                
+                   
+                
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="img-column">
+                        <img src="images/backgroundimg.jpg">
+                    </div>
+                    <div class="about-column">
+                        <h1 syle="font-size: 60px;"><span style="color: purple;">About</span> Wisdom</h1>
+                        <P>
+                            <br>Welcome to my digital space! I'm Wisdom Ehirim, a passionate Fullstack Developer with a love for crafting innovative solutions that seamlessly blend functionality and aesthetics.
+                            I thrive on the challenges that come with creating robust and user-friendly applications.<br>
+                            <br>My Journey:
+                            <br>I embarked on my journey into the world of programming with a vision to make a meaningful impact through code. With a solid foundation in both front-end and back-end technologies, I navigate the digital landscape with curiosity and a commitment to continuous learning.
+                        </P>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Volunteer</p>
+
+                        </div>
+                        <div class="table-contents active-tab" id="Education">
+                            <ul>
+                                <li><span>Software Engineering</span><br>Federal University of Technology Owerri</li>
+                                <li><span>CS50X (Introduction to Computer Science)</span><br>HarvardX 2023</li>
+                                <li><span>Python</span><br>National Institute of Information Technology 2022</li>
+                                <li><span>Scientfic Computing with Python</span><br>Freecode Camp 2022</li>
+                            </ul>
+                        </div>
+                        <div class="table-contents" id="Skills">
+                            <ul>
+                                <li><span>Backend Development</span><br>SQL, Python, C</li>
+                                <li><span>FullStack Web development</span><br>Django, Flask, Javascript</li>
+                                <li><span>Git knowledge</span><br>Git, Github</li>
+                                <li><span>Soft Skills</span><br>Communication, Team-work, Transparency.</li>
+                            </ul>
+                        </div>
+                        <div class="table-contents" id="Experience">
+                            <ul>
+                                <li><span>2023</span><br>Cowrywise Campus Ambassador</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services">
+            <div class="container">
+                <h1>Services</h1>
+                <div class="services-list">
+                    <div class="special">
+                        <i class="fas fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>I make efficient web designs for clients through efficient code</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="special">
+                        <i class="fa-solid fa-bug"></i>
+                        <h2>Automation and Testings</h2>
+                        <p>I make efficient web designs for clients through efficient code</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="special">
+                        <i class="fa-regular fa-server"></i>
+                        <h2>Data Structures and Algorithms</h2>
+                        <p>I make efficient web designs for clients through efficient code</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="special">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                        <h2>Machine learning</h2>
+                        <p>I make efficient web designs for clients through efficient code</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="special">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Data Analysis</h2>
+                        <p>I make efficient web designs for clients through efficient code</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio">
+            <div class="container">
+                <h1>Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/images/work-1.png">
+                        <div class="layer">
+                            <h3>Realtime Webchat</h3>
+                            <p>A socketio application for sending messages and inviting friends to chatrooms.</p>
+                            <a href="javascript:void(0)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                        </div>
+
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-2.png">
+                        <div class="layer">
+                            <h3>Social media app</h3>
+                            <p>A clone app</p>
+                            <a href="javascript:void(0)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-3.png">
+                        <div class="layer">
+                            <h3>Realtime Currency Converter</h3>
+                            <p>A simple currency converter with a realtime exchange rate</p>
+                            <a href="javascript:void(0)"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">See more</button>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 style="font-size: 50px;">Contact <span style="color: purple;">Wisdom</span></h1>
+                        <p><i class="fas fa-paper-plane"></i> wisdomehirim006@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +234 7068 785 863</p>
+                        <div class="social-icons">
+                            <a href="https://x.com/Wisdom_purecode?t=385-RP-ECqwQ1u5a76zjsg&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/wisdom-ehirim-1bba94243/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/WisdomEhirim06"><i class="fa-brands fa-square-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your name"  required>
+                            <input type="email" name="Email" placeholder="someone@example.com"  required>
+                            <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                            <button type="submit" class="btn btn2"><i class="fa-solid fa-envelope"></i> Send</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <script>
+            var sections = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('table-contents');
+
+            function opentab(tabname){
+                for(links of sections){
+                    links.classList.remove("active-link");
+                }
+                for(contents of tabcontents){
+                    contents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+            var sidemenu = document.getElementById('sidemenu');
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw0zEr2c6EuwZzeDIrPD3QpNFG_E4QC94GSFKyFvesHewhYegxc0kCeUOXHrylElQMW/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById('msg')
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = " Message Sent"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+
+            // Initialize ScrollReveal
+            const sr = ScrollReveal({
+                reset: true,
+            });
+
+            // Add animation to the first section
+            sr.reveal('#about', {
+                duration: 700,
+                origin: 'bottom',
+                distance: '20px',
+                easing: 'ease-in-out',
+                delay: 100,
+            });
+
+            // Add animation to the second section
+            sr.reveal('#services', {
+                duration: 500,
+                easing: 'ease-in-out',
+                delay: 100,
+                scale: 1.2,
+                easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+                distance: '0px',
+                origin: 'bottom',
+            });
+
+            // Add animation to the third section
+            sr.reveal('#portfolio', {
+                duration: 800,
+                origin: 'right',
+                distance: '30px',
+                easing: 'ease-in-out',
+                delay: 200,
+            });
+            sr.reveal('#contacts', {
+                duation: 800,
+                origin: 'bottom',
+                distance: '30px',
+                easing: 'ease-in-out',
+                delay: 100
+            })
+        </script>
+    </body>
+</html>
